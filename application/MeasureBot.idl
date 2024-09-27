@@ -1,0 +1,29 @@
+﻿// MeasureBot.idl: MeasureBot.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(MeasureBot.tlb)。
+
+[ uuid(fd4810f0-8835-4d7e-aca4-059d00a707fd), version(1.0) ]
+library MeasureBot
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CMeasureBotDoc 的主调度接口
+
+	[ uuid(36aee4be-c5f0-43eb-a8f6-26d1eb8d1e93) ]
+	dispinterface IMeasureBot
+	{
+		properties:
+
+		methods:
+	};
+
+	//  CMeasureBotDoc 的类信息
+
+	[ uuid(77d5230e-aba6-4d0b-b2d7-79e1d540d18a) ]
+	coclass MeasureBot
+	{
+		[default] dispinterface IMeasureBot;
+	};
+};
